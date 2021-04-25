@@ -2,8 +2,8 @@ import smtplib
 import os
 from email.message import EmailMessage
 
-EMAIL_ADDRESS = os.environ.get('EMAIL_ADDRESS')
-EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_ADDRESS = os.environ.['EMAIL_ADDRESS']
+EMAIL_PASSWORD = os.environ.['EMAIL_PASSWORD']
 
 msg = EmailMessage()
 msg['Subject'] = 'Checking smtplib FROM GITHUB'
