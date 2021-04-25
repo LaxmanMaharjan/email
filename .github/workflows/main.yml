@@ -9,8 +9,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  schedule:
-    - cron: '*/5 * * * *' # runs at 12:00 UTC everyday
+#   schedule:
+#     - cron: '*/5 * * * *' # runs at 12:00 UTC everyday
 
 
   # Allows you to run this workflow manually from the Actions tab
