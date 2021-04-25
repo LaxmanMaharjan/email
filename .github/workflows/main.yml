@@ -34,4 +34,8 @@ jobs:
           python-version: '3.7'
           
       - name: execute py script 
+        env: 
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+       
         run: python send_email.py
