@@ -1,5 +1,5 @@
 import smtplib
-
+import os
 from email.message import EmailMessage
 
 EMAIL_ADDRESS = os.environ.get('EMAIL_ADDRESS')
